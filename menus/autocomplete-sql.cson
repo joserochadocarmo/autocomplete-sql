@@ -1,0 +1,22 @@
+# See https://atom.io/docs/latest/hacking-atom-package-word-count#menus for more details
+'context-menu':
+  'atom-text-editor': [
+    {
+      'label': 'Toggle autocomplete-sql'
+      'command': 'autocomplete-sql:toggle'
+    }
+  ]
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'autocomplete-sql'
+      'submenu': [
+        {
+          'label': 'Toggle'
+          'command': 'autocomplete-sql:toggle'
+        }
+      ]
+    ]
+  }
+]
